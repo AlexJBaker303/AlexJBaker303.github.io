@@ -36,8 +36,12 @@ header.section {
   padding: 20px;
 }
 
+p.indent{
+  text-indent: 40px;
+}
+
 /* Create two columns/boxes that float next to each other */
-nav {
+nav.portrait {
   float: left;
   width: 30%;
   background-image: url("Portrait_small.png");
@@ -48,7 +52,7 @@ nav {
   padding: 20px;
 }
 
-article {
+article.about {
   float: left;
   padding: 20px;
   width: 70%;
@@ -95,23 +99,22 @@ footer.break {
 </header>
 
 <section>
-  <nav>
-
+  <nav class="protrait">
   </nav>
   
-  <article>
+  <article class="about">
     <h1>About Me</h1>
     <p>Greetings!</p>
-    <p>
+    <p class="indent">
       I am a recent graduate from the Herbert Wertheim College of Engineering at the University of Florida. I majored in Electrical Engineering and received my 
       bachelors degree in may of 2025. Electronics has been a long-time interest for me, so choosing to major in Electrical Engineering was an easy choice. 
-
-    <p>
+    </p>
+    <p class="indent">
       Currently I am seeking an entry level job in Electrical Engineering. I am interested in the power electronics field, a field of Electrical Engineering based
       on high power DC or AC circuits, with a large influence on robitics, renewable energy, and electric vehicles. I enjoy hands-on tasks the most, like assembling
-      circuit boards or wiring, but I also enjoy computer based design processes, for example CAD or EDA  </p>
-    
-    <p>
+      circuit boards or wiring, but I also enjoy computer based design processes, for example CAD or EDA  
+    </p>
+    <p class="indent">
       I spend my spare time tinkering with things, usually electronics, sometimes other mechanical devices. Regardless of electrical or mechanical I have a desire
       to learn how things work and why things are the way that they are. Inspiration for a project usually comes from some salvaged part, I form a vision of what I think
       I can do with that part, and everything stems from there. I love the creative design process, going from a pile of parts to a finished product is fun every step of the way.
@@ -131,13 +134,13 @@ footer.break {
 </header>
 
 <article>
-  <p>
-    <img src="ufCoE.png" style="float:left;width:348px;">
+  <p class="indent">
+    <img src="ufCoE.png" style="width:348px;">
     I graduated with my bachelors in Electrical Engineering from the Herbert Wertheim College of Engineering at the university of florida in May of 2025.
     The University of Florida is a great school, during my time there I met many great people and got to experience lots of cool things. Despite the constant
     construction and periodic lack of taste in architecture, the UF campus is beutiful and packed with things to discover. 
   </p>
-  <p>
+  <p class="indent">
     Being a person that likes to learn by doing, the most meaningful classes that I took at UF were the design or project based ones, such as junior or senior design.
     These two classes are not like typical lecture based classes, they are self guided design projects where you are the engineer.
     There are some simple requirements to fulfill, but it is entirely on you to put the pieces together. This is something that I wish happened more in engineering classes,
@@ -147,7 +150,7 @@ footer.break {
     that I like working in the most, there is something satisfying about digital circuits and the ability to manipulate data and do operations with a collection of
     simple components. In a time when efficiency is more relevant than ever, the field power electronics is never dull! 
   </p>
-  <p>
+  <p class="indent">
     The thing that I am most proud of from my time at UF and the thing that I will look back on the most is my contributions to a research lab in the mechanical and Aerospace
     Engineering department. This lab was developing a product called the BathyDrone, with support from Aurego. The Bathydrone is a bathymetric mapping sustem in which a large
     drone tows a small unpowered vessel equiped with sidescan sonar. Every day that I spent working with the team on this project was a joy, everybody shared the same interest
@@ -155,8 +158,8 @@ footer.break {
     <br>
     <br>
   </p>
-  <p>
-    <img src="SF.png" style="float:left;width:200px;">
+  <p class="indent">
+    <img src="SF.png" style="width:200px;">
     Before attending the University of Florida I took classes at Santa Fe College as part of a program called Gator Engineering at Santa Fe. The goal was to allow students to
     take genED classes at SantaFe before "transferring" to UF. Although not a typical route to get to UF it had a number of benifits for me, not the least of which being the
     fact the Santa Fe costs roughly half as much as UF's in-state tuition. The other big advantage for me was smaller class sizes and a more close knit community, which really

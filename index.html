@@ -45,16 +45,24 @@ p.indentnp{
   margin-bottom: 0px;
 }
 
-div.eduimg{
+div.left{
   float: left;
   padding: 10px;
   min-height: 650px;
 }
 
-div.edutxt{
+div.right_1{
   padding: 10px;
   margin-left: 300px;
-  margin-right: 300px;
+  margin-right: 200px;
+  text-indent: 40px;
+  min-height: 650px;
+}
+
+div.right_2{
+  padding: 10px;
+  margin-left: 450px;
+  margin-right: 200px;
   text-indent: 40px;
   min-height: 650px;
 }
@@ -153,7 +161,7 @@ footer.break {
 </header>
 
 <article>
-  <div class="eduimg">
+  <div class="left">
     <img src="uf.png" style="width:250px;">
     <br>
     <img src="ufCoE.png" style="width:250px;">
@@ -165,7 +173,7 @@ footer.break {
     <br>
   </div>
 
-  <div class="edutxt">
+  <div class="right_1">
     <h1>
       University of Florida
     </h1>
@@ -199,7 +207,7 @@ footer.break {
       Santa Fe College
     </h1>
     <p class="indent">
-      Before attending the University of Florida I took classes at Santa Fe College as part of a program called Gator Engineering at Santa Fe. The goal was to allow students to
+      Before attending the University of Florida I took classes at Santa Fe College as part of a program called Gator Engineering at Santa Fe. The goal of the program is to allow students to
     take genED classes at SantaFe before "transferring" to UF. Although not a typical route to get to UF it had a number of benifits for me, not the least of which being the
     fact the Santa Fe costs roughly half as much as UF's in-state tuition. The other big advantage for me was smaller class sizes and a more close knit community, which really
     improved the experienc of taking difficult classes like calculus, physics, and chemistry. 
@@ -211,6 +219,66 @@ footer.break {
 <header class="section">
   <h1>Experience</h1>
 </header>
+
+<article>
+  <div class="left">
+    <iframe width="400" height="225" src="https://www.youtube.com/watch?v=1rVH4LCTMuo"></iframe>
+    <br>
+    <img src="drone.png" style="width:400px;">
+    <br>
+    <img src="bathyvessel.png" style="width:400px;">
+    <br>
+    <img src="aprildrones.jpg" style="width:400px;">
+    <br>
+  </div>
+
+  <div class="right_2">
+    <h1>The Bathydrone</h1>
+    <p class="indentnp">
+      The Bathydrone is a project led by Dr. Peter Ifju and Dr. Jane Shin in the Mechanical and Merospace Mngineering department at the University of Florida.
+      Together with Phd students, masters students, other faculty, and undergraduates like me, we worked on developing a new method to do bathymetry faster and
+       cheaper than traditional methods. The Bathydrone gets its namesake from bathymetry and the drone that tows the vessel. This project was made possible by
+        Aurigo Software technologies, a company that specializes in software for civil engineering and project management, particularly governments. 
+    </p>
+    <p class="indentnp">
+      Displayed to the left in the middle upper and lower images are an overview of the heavy-lift drone and unpowered vessel. The drone was built in-house by students
+       using carbon fiber, which makes for an airframe that is very durable an light weight. The vessel was built by laying fibergalss over a foam form to create a very precise
+       shape. This shape was fine tuned over nearly half a dozen iterations to make a vessel that could plane level while being pulled from above and be resistant to
+      capzising. The vessel also needed to be light since the Bathydrone system is designed with the intention that the drone can fully lift the vessel in and out of the water, 
+      the latest revision of the vessel and drone weighed about 20 pounds each, putting the system near the legal FAA weight limits for this class of vehicle.   
+    </p>
+    <p class="indentnp">
+      The Bathydrone did bathymetric mapping using a sidescan sonar for imagery and RTK corrected GPS for accurate postitioning. With these two components the imagery was post
+       processed into a map of the bottom surface of the water body relative to the water surface. The sonar system used was a Lowrance HDS 11 recreational "fish finder",
+       despite being recreational grade equipment is was able to provide resonable accuracy sidescan and downscan, data logging, and limited networking capabilities at a price
+        far less than scientific grade sonar. For RTK GPS on the vessel we used a Pixhawk Cube Orange, which is actually a drone flight computer, but in the vessel it provided
+        RTK gps as well as the ability to control the twin rudders on the rear of the vessel. The drone also uses a Pixhawk Cube flight conputer and carries two RTK capable
+        GPS antennas.   
+    </p>
+    <p class="indentnp">
+      My role in the team was primarily installing and maintaining the electrical systems of the drone and vessel. My first project was designing a device to measure and record
+      the tension in the tow line between the drone and vessel. This tension data was used to supplement physics simulation of the Bathydrone in part of one Phd student's research.
+      I also designed a power distribution borad (PDB) for the drone. The drone has many components that all needed different voltages to run, and the flight computer needed a way
+      to monitor battery state. To achieve this I designed and built a PDB that distributes 52V battery power to each motor while also monitoring current and voltage.
+      The large motor currents flowed through internal copper planes while five different high voltage DC-DC converters on top of the PDB generated voltages needed for the flight
+       computer, servos, long range receiver, and navigation lights. I had never attempted a PCB design like this before, but I am proud to say that after donzens of drone flights
+       not a single failure occoured related to the PDB. In addition to PDB work I did lots of soldering and wiring for the vessel, the electrical systems on the vessel were
+      constantly changing as different things were tested or removed, so keeping the wiring reliable and as neat as possible was a constant challenge. Throughout my time working
+      in the lab I also assisted with field testing, which involved loading equipment into a vehicle, travelling to a site, and setting up equipment before running the experiment.
+      Field days rarely went the way they were planned and often took longer then planned, but part of doing research is handling problems and overcoming them as they are encountered
+      , no field day was ever wasted.   
+    </p>
+    <br>
+    <br>
+    <p class="indent">
+      Displayed in the bottom image is a pair of medium drones that I worked on for another research lab in the MAE department at UF. This lab worked in conjunction with the Bathydrone
+      lab, but was mainly focused on robotic perception research. A small team of other undergrad student and I worked on a set of four of the drones pictured. These drones are equipped
+      with a companion computer that communicates to both the drone's flight computer and a base station, relaying data between the two that allows the drone to fly indoors guided by an
+      Optitrack motion capture system. With the Optitrack system the drone could track or follow targets in a small space with milimeter precision. Over a summer with the help of the
+      team I assembled and tuned these drones before the programming for the motion capture sytem.
+    </p>
+  </div>
+</article>
 
 </body>
 </html>
